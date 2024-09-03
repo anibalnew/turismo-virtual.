@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Turístico de El Salvador</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="map"></div>
+    <div id="info">
+        <div id="info-header">
+            <h2>Centro Turístico</h2>
+        </div>
+        <div id="info-content">
+            <p id="description"></p>
+            <img id="image" src="" alt="Imagen" />
+            <a id="directions" href="#" target="_blank">
+                <i class="fas fa-directions"></i> Cómo llegar
+            </a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="scrips.js"></script>
+</body>
+</html>

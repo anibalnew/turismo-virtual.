@@ -1,0 +1,311 @@
+/* importamos las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Londrina+Solid:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+}
+.inicio{
+    height: 100%;
+}
+.inicio .fondo-cielo{
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0) 80%, rgb(0, 0, 0)),
+    url(img/cielo.png);
+    background-size: cover;
+    height: 85%;
+    z-index: -10;
+}
+.inicio .fondo-img{
+    background: url(https://r1.community.samsung.com/t5/image/serverpage/image-id/2538864i0C7E3B93CDE63A01?v=v2);
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 0;
+    height: 110%;
+    width: 100%;
+    z-index: 5;
+}
+.inicio .contenido-seccion{
+    max-width: 1200px;
+    margin: auto;
+}
+.inicio .contenido-seccion header{
+    padding: 50px 20px;
+    z-index: 100;
+    position: relative;
+
+}
+.inicio .contenido-seccion header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Londrina Solid';
+}
+.inicio .contenido-seccion header nav a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.inicio .contenido-seccion header nav a i{
+    font-size: 30px;
+}
+.titulo{
+    font-family: 'Finger Paint';
+    text-align: center;
+    font-size: 6rem;
+    color: #000000;
+    position: relative;
+    text-transform: uppercase;
+
+}
+/* SECCION TOURS */
+.tours{
+    text-align: center;
+    max-width: 1100px;
+    margin: auto;
+    background: #fff;
+    margin-top: 100px;
+    z-index: 100;
+}
+h2{
+    color: #334755;
+    font-size: 20px;
+    font-family: 'Londrina Solid';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.tours > p{
+    color: #666;
+    line-height: 35px;
+    font-size: 20px;
+}
+.tours .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.tours .fila .col{
+    width: 30%;
+
+}
+.tours .fila i{
+    font-size: 35px;
+    color: #334755;
+    display: inline-block;
+}
+.tours .fila p{
+    color: #666;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 25px;
+}
+/* SECCION INFO */
+.info{
+    position: relative;
+}
+.info img{
+    width: 70%;
+}
+.info .texto{
+    background: rgba(255,255,255,.7);
+    max-width: 600px;
+    border: 2px solid #334755;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+}
+.info .texto p{
+    margin: 10px 0;
+    color: #666;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 25px;
+}
+.info .texto button{
+    background-color: #fff;
+    border: none;
+    border: 2px solid #334755;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 40px;
+    cursor: pointer;
+}
+/* SECCION DESCUBRIR */
+.descubrir .contenido-seccion{
+    position: relative;
+    width: 100%;
+    bottom:  150px;
+}
+.descubrir .contenido-seccion img{
+    width: 100%;
+}
+.descubrir .contenido-seccion .info{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    max-width: 900px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 150px;
+}
+.descubrir .contenido-seccion .info p{
+    color: #182e42;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 25px;
+}
+.descubrir .contenido-seccion button{
+    background-color: #ff0000;
+    border: none;
+    border: 2px solid #0d2335;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #282780;
+    margin-top: 40px;
+    cursor: pointer;
+}
+/* SECCION COLECCION */
+.coleccion{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.coleccion .fila{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.coleccion .fila img{
+    max-height: 120px;
+}
+.coleccion .fila .col{
+    margin: 0 30px;
+    border: 2px solid #223070;
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+}
+.coleccion .fila .col .nombre{
+    color: #334755;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 20px 0;
+}
+.coleccion .fila .col h3{
+    border: 2px solid #334755;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 5px 15px;
+}
+/* SECCION SURFING */
+.surfing{
+    background: url(img/EL-TUNCO.jpg);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.surfing .posicion{
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    width: 100%;
+    color: #ffe538;
+}
+/* SECCION SUBSCRIBASE */
+.subscribase{
+    text-align: center;
+    padding: 60px 0;
+}
+.subscribase input{
+    display: inline-block;
+    margin-top: 20px;
+    width: 400px;
+    font-size: 20px;
+    padding: 10px;
+    border: 0px solid #334755;
+    text-align: center;
+}
+/* SECCION ES AHORA */
+.esahora{
+    background: url(https://www.ngenespanol.com/wp-content/uploads/2018/08/El-pa%C3%ADs-de-170-volcanes-1280x720.jpg);
+    background-size: cover;
+    height: 99vh;
+}
+.esahora .redes{
+    text-align: center;
+}
+.esahora .redes a{
+    text-decoration: none;
+    font-size: 60px;
+    display: contents;
+    margin: 0 30px;
+    color: #232f57;
+}
+.esahora .color{
+    color: #18385c;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Diseño para pantallas grandes */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Media query para pantallas medianas */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    margin: 10px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.justified-text p {
+    text-align: justify;
+}
